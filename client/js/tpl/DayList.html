@@ -1,0 +1,24 @@
+<ul class="topcoat-list list">
+<% _.each(days, function(day) { %>
+    <li class="topcoat-list__item">
+        <a>
+            <p align="center"><%= day.day %> </p>
+        </a>
+    </li>
+    <% _.each(day.values, function(value) { %>
+    	<li class="topcoat-list__item" style="margin:0">
+    		<a>
+    			<div class="topcoat-grid__row">
+    				<div class="topcoat-grid__column--4">
+  						<p><%= value.time %> <%= value.currency %></p>
+  					</div>
+  					<div class="topcoat-grid__column--8">
+  						<p><%= value.event %></p>            	
+    					<p>Act <%= value.actual %> | For <%= value.forecast %> | Prev <%= value.previous %></p>
+  					</div>
+				</div>    
+    		</a>
+    	</li>
+    <%}); %>
+<% }); %>
+</ul>

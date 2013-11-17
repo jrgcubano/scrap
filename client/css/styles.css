@@ -1,0 +1,56 @@
+.topcoat-navigation-bar {
+    z-index: 10;
+}
+
+.scroller {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    top: 168px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.topcoat-icon--back {
+    background: url("images/back_light.svg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.topcoat-list__container {
+    border-bottom: none;
+    clear: both;
+}
+
+.list li {
+    position: relative;
+    text-align: left;
+    clear: both;
+    padding: 12px 60px 16px 8px !important;
+}
+
+.list > li p:nth-of-type(1) {
+    margin: 0px;
+    padding-top: 4px;
+    font-weight: bold;
+}
+
+.list > li p:nth-of-type(2) {
+    margin: 0px;
+    color: #888;
+}
+
+.list > li img {
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin-top: 0px;
+    margin-right: 8px;
+}
+
+ul {
+    clear:both;
+    border-top: none !important;
+}
